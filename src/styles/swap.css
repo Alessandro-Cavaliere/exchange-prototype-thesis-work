@@ -1,0 +1,229 @@
+.container-row{
+    margin: 10vh 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.graphic-card{
+    align-items: center;
+    background: #2c2f4d;
+    height: 500px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow:2px 3px 10px #0d0d0d;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.graphic-buttons{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%
+}
+
+.swap-card{
+    align-items: center;
+    justify-content: space-evenly;
+    background: #2c2f4d;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px #0d0d0d;
+    padding: 10px;
+}
+.swap-card-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.swap-card-first-row{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.swap-input{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 10px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: #ff0000;
+}
+
+.select-coin{
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    background: #c6c6c6;
+
+}
+
+
+.dropdown{
+    width: 400px;
+    user-select: none;
+}
+.dropdown-btn{
+    padding: 25px 35px 5px 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-click{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown-btn-second{
+    padding: 0px 35px 5px 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.dropdown-content{
+    padding: 5px 15px;
+    position: absolute;
+    background: #2c2f4d;
+    box-shadow: 3px 3px 15px 6px rgb(18 22 47 / 50%);
+    color: white;
+    overflow-y: scroll;
+    height: 150px;
+    width: 150px;
+    margin-left: 35px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content::-webkit-scrollbar{
+    width: 10px;
+    background: #7775;
+    border-radius: 15px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb{
+    background: #7775;
+    border-radius: 15px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover{
+    background: #7777;
+}
+
+.dropdown-content::-webkit-scrollbar-track{
+    border-radius: 15px;
+}
+
+.dropdown-content::-webkit-scrollbar-track:hover{
+    background: #3338;
+}
+
+.dropdown-item{
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-direction: row;
+}
+.dropdown-item:hover{
+   background: grey;
+}
+
+.swap-card-second-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 70px;
+    width: 370px;
+    background: #111632;
+    text-align: center;
+    border-radius: 30px
+}
+
+.input-style{
+    all:unset;
+    text-align: right;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.button-style-swap{
+    all: unset;
+    color: gold;
+    font-size: 13px;
+    margin: 5px 10px 0px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.p-style-swap{
+    color: gold;
+    font-size: 13px;
+    margin: 5px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.p-style-loading{
+    color: #c6c6c6;
+    font-size: 15px;
+}
+
+.input-style::-webkit-outer-spin-button,
+.input-style::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn-swap{
+    background: #12308c;
+    cursor: pointer;
+    color: black;
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: ease-in 0.2s;
+}
+
+.btn-swap:hover{
+    background: white;
+    color: black;
+}
+
+.div-loader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 370px;
+    justify-content: flex-start;
+    padding: 10px 0px;
+}
+
+

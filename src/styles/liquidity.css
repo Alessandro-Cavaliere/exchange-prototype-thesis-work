@@ -1,0 +1,52 @@
+.liquidity-card{
+    align-items: center;
+    justify-content: space-evenly;
+    background: #2c2f4d;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px #0d0d0d;
+    padding: 10px;
+}
+
+.liquidity-card-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.liquidity-card-first-row{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.liquidity-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.btn-liquidity{
+    background: #12308c;
+    cursor: pointer;
+    color: black;
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: ease-in 0.2s;
+}
+
+.btn-liquidity:hover{
+    background: white;
+    color: black;
+}

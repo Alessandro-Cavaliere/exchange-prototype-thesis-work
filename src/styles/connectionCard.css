@@ -1,0 +1,239 @@
+.connection-card{
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: 45px;
+    align-items: center;
+    background: whitesmoke;
+    height: 300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 30px;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+.container-card{
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation: blurIn 1s;
+    animation-fill-mode: forwards;
+}
+
+.container-card.blurOut{
+    animation: blurOut 1s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+.connection-card.fadeOut{
+    animation: fadeOut 1s ;
+    animation-fill-mode: forwards;
+    z-index: 0;
+}
+
+.connection-card.connecting {
+    height: 310px;
+}
+
+.first-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: inherit;
+    border-bottom: 1px solid #d4cfcf;
+    background: linear-gradient(130deg, #7ba2de, #eaf2ff);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px
+}
+
+.first-row-h1{
+    font-size: 18px;
+    margin-right: 80px;
+}
+
+.first-row-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.first-row-icon:hover{
+    cursor: pointer;
+    color: #000000a8;
+}
+
+.row-connection{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    width: inherit;
+    justify-content: space-between;
+}
+.second-row-connection{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    width: inherit;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px #6c6c6c;
+    border-radius: 15px;
+}
+.second-row-connection.alt{
+    border: solid 1px #6c6c6c;
+    background-color: rgb(213 214 218);
+    justify-content: space-between;
+    height: 70px;
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-div.cont{
+    align-items: center;
+    border: solid 1px #6c6c6c;
+    background-color: rgb(213 214 218);
+    border-radius: 15px;
+}
+
+.p-style{
+    font-size: 12px;
+    padding: 15px;
+    line-height: 1.2;
+}
+
+.column-connection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px 15px;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.grid-elements{
+    display: grid;
+    width: inherit;
+    height: inherit;
+}
+
+.grid-icon{
+
+    height: 40px;
+    width: 40px;
+}
+
+.grid-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-div:hover {
+    filter: opacity(0.8);
+}
+
+.grid-div.position{
+    grid-row: 1;
+}
+
+.metamask-h1{
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--error-color);
+
+}
+
+.metamask-card{
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: 45px;
+    align-items: center;
+    background: whitesmoke;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+.metamask-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.metamask-btn{
+    cursor: pointer;
+    border: transparent;
+    height: 40px;
+    background: #1d286a;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 50%;
+    width: 50%;
+    font-size: 18px;
+}
+
+@keyframes blurIn {
+    from{
+        backdrop-filter: none;
+    }
+    to{
+        backdrop-filter: blur(1px);
+    }
+}
+
+
+@keyframes blurOut {
+    from{
+        backdrop-filter: blur(1px);
+    }
+    to{
+        backdrop-filter: none;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
